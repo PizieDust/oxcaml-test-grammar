@@ -62,7 +62,7 @@ const NUMBER = token(
 const HASH_NUMBER = token(seq("#", NUMBER));
 
 module.exports = grammar({
-	name: "ocaml",
+	name: "oxcaml",
 
 	extras: ($) => [/\s/, $.comment, $.line_number_directive, $.attribute],
 
